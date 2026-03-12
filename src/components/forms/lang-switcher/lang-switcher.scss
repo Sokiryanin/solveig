@@ -1,0 +1,65 @@
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+
+  width: 60px;
+  height: 36px;
+  background-color: rgba(32, 38, 56, 0.75);
+  backdrop-filter: blur(30px);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #d4d8e3;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: rgba(32, 38, 56, 0.9);
+          color: #202638;
+    }
+  }
+
+  // Текст
+  &__text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    @media (max-width: toEm($tablet)) {
+      font-size: 12px;
+    }
+  }
+
+  // UA — видно коли EN активна
+  &__text--to-uk {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  // EN — видно коли UK активна
+  &__text--to-en {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  // Стан: українська активна
+  &.--uk {
+    .lang-switch__text--to-uk {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    .lang-switch__text--to-en {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
