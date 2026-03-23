@@ -1,7 +1,9 @@
 .lets-work {
+  background-color: $mainColor;
   // .lets-work__line
 
   &__line {
+    background-color: $bgcMain;
   }
 
   // .lets-work__body
@@ -12,33 +14,44 @@
   // .lets-work__container
 
   &__container {
+    @include adaptiveValue('padding-top', 128, 60);
+    @include adaptiveValue('padding-bottom', 160, 80);
   }
 
   // .lets-work__content
 
   &__content {
+    text-align: center;
     display: grid;
     justify-items: center;
-    @include adaptiveValue('gap', 16, 8);
+    @include adaptiveValue('gap', 32, 16);
     text-wrap: balance;
-    text-align: center;
   }
 
   // .lets-work__star
 
   &__star {
+    @include adaptiveValue('width', 50, 25); // подставь свои значения из Figma
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   }
 
   // .lets-work__title
 
   &__title {
+    @include adaptiveValue('font-size', 96, 40);
     font-weight: 600;
-    font-size: 96px;
-    line-height: 1;
+
+    line-height: 100%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-align: center;
     color: $textInverse;
+    max-width: 1000px;
   }
 
   // .lets-work__button
@@ -46,10 +59,17 @@
   &__button {
   }
 }
+
 .line-work {
   // .line-work__item
 
   &__item {
+    @include adaptiveValue('padding-block', 16, 10);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
   }
 }
 .button {
