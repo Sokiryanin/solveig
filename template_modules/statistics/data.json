@@ -1,6 +1,68 @@
 {
   "statistics": {
-    "sessions": [],
-    "files": []
+    "sessions": [
+      {
+        "date": "12.03.2026",
+        "start": 1773300801780,
+        "end": 1773302763190
+      },
+      {
+        "date": "12.03.2026",
+        "start": 1773302766571,
+        "end": 1773306882446
+      },
+      {
+        "date": "12.03.2026",
+        "start": 1773312036580,
+        "end": 1773332114109
+      },
+      {
+        "date": "23.03.2026",
+        "start": 1774263824143,
+        "end": 1774268777280
+      },
+      {
+        "date": "23.03.2026",
+        "start": 1774268780673,
+        "end": 1774268879647
+      },
+      {
+        "date": "23.03.2026",
+        "start": 1774269373047,
+        "end": 1774269641690
+      },
+      {
+        "date": "23.03.2026",
+        "start": 1774269724957,
+        "end": 1774269962535
+      },
+      {
+        "date": "23.03.2026",
+        "start": 1774269965491,
+        "end": 1774271181362
+      },
+      {
+        "date": "23.03.2026",
+        "start": 1774271208498,
+        "end": 1774271214037
+      }
+    ],
+    "files": [
+      "button.scss",
+      "header.html",
+      "style.scss",
+      "button.html",
+      ".DS_Store",
+      "index.html",
+      "menu.html",
+      "header.scss",
+      "menu.scss",
+      "letswork.html",
+      "home.html",
+      "letswork.scss",
+      "letswork.js",
+      "settings.scss",
+      "button.js"
+    ]
   }
 }

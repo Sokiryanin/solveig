@@ -1,0 +1,60 @@
+.lets-work {
+  // .lets-work__line
+
+  &__line {
+  }
+
+  // .lets-work__body
+
+  &__body {
+  }
+
+  // .lets-work__container
+
+  &__container {
+  }
+
+  // .lets-work__content
+
+  &__content {
+    display: grid;
+    justify-items: center;
+    @include adaptiveValue('gap', 16, 8);
+    text-wrap: balance;
+    text-align: center;
+  }
+
+  // .lets-work__star
+
+  &__star {
+  }
+
+  // .lets-work__title
+
+  &__title {
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $textInverse;
+  }
+
+  // .lets-work__button
+
+  &__button {
+  }
+}
+.line-work {
+  // .line-work__item
+
+  &__item {
+  }
+}
+.button {
+  // .button--green
+
+  &--green {
+  }
+}

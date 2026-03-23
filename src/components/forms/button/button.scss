@@ -1,13 +1,56 @@
 //<BUTTONS (a.btn+tab)>
 // Сніппет (HTML): btn
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&--fw {
-		width: 100%;
-	}
+  display: inline-flex;
+  @include adaptiveValue('padding', 16, 12);
+  @include adaptiveValue('font-size', 12, 10);
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $mainColor;
+
+  align-items: center;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+
+  &::before {
+    content: '';
+    flex: 0 0 16px; /* фиксированные 20px, не сжимается */
+    height: 1px;
+    background: currentColor;
+    margin-right: 10px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $mainColor;
+      color: $textInverse;
+    }
+  }
+
+  &--dark {
+    background-color: $mainColor;
+    color: $textInverse;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $textInverse;
+        color: $mainColor;
+      }
+    }
+  }
+
+  &--green {
+    border: none;
+    background-color: $bgcMain;
+  }
 }
